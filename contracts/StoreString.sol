@@ -2,13 +2,14 @@
 pragma solidity ^0.8.9;
 
 contract StoreString {
-    string private secret
+    string private secret;
 
     event Secret_Stored();
 
     function setSecret(string memory _secret) public {
         require(_encString(secret) == _encString(_secret), "secret can't be the same");
         secret = _secret;
+        emit Secret_Stored();
     }
 
     function getSecret() public view returns(string memory) {
@@ -16,7 +17,7 @@ contract StoreString {
     }
 
 
-    function _encString(string memory _string) internal pure returns(string memory) {
+    function _encString(string memory _string) internal pure returns(bytes32) {
         return keccak256(abi.encodePacked(_string));
     }
 
