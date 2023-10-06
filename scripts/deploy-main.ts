@@ -9,4 +9,6 @@ export async function deploy(chain: string) {
     status: "deployed",
     network: chain,
   });
+
+  return store.target;
 }
