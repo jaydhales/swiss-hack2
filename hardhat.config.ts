@@ -7,7 +7,7 @@ configDotenv();
 const { MUMBAI_RPC, PRIV, ETHERSCAN_API_KEY } = process.env;
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.19",
+  solidity: "0.8.0",
   networks: {
     mumbai: {
       url: MUMBAI_RPC,

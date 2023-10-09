@@ -1,13 +1,10 @@
-# Sample Hardhat Project
+# Swisstronik Hack 2
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Deployed Contract Address:
 
-Try running some of the following tasks:
+- swisstronik - 0x1e3808497594c4017FE9D0fd9E9dE79603d62525;
+- mumbai =0x1e3808497594c4017FE9D0fd9E9dE79603d62525;
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+```
+
 ```

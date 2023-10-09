@@ -2,7 +2,7 @@ import { ethers } from "hardhat";
 import { getStorageAtZero } from "./interactWithSwiss";
 
 const main = async () => {
-  const contract = "0x0";
+  const contract = "0x1e3808497594c4017FE9D0fd9E9dE79603d62525";
   await getStorageAtZero(contract, "checking slot 0 before transaction");
 
   const [signer] = await ethers.getSigners();
